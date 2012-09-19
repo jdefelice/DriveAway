@@ -1,0 +1,193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>
+			DriveAway
+		</title>
+		<link rel="stylesheet" href="style.css" type="text/css" media="screen" title="Default" charset="utf-8" />
+	</head>
+	<body id="search" class="cars">
+		<div id="wrapper">
+			<div id="header">
+				<h1>
+					<a href="?index">DriveAway</a>
+				</h1>
+				<div id="user-menu">
+					<span>Hello, Jon</span>
+					<a href="?user/details">Profile</a>
+					<a href="?login/logout">Logout</a>
+				</div>
+			</div>
+			<div id="flash">
+				<span class="success">Your task was successful</span>
+			</div>
+			<div id="content">
+				<div id="search-box">
+					<form action="?search" method="post" accept-charset="utf-8">
+						<p>
+							<label for="search">Search</label> <input type="text" name="search" value="" id="search" />
+						</p>
+						<p>
+							<label for="color">Color</label> <select name="color" id="color">
+								<option value="any">
+									Any
+								</option>
+								<option value="blue">
+									Blue
+								</option>
+								<option value="black">
+									Black
+								</option>
+								<option value="silver">
+									Silver
+								</option>
+							</select>
+						</p>
+						<p>
+							<label for="make">Make</label> <select name="make" id="make">
+								<option value="any">
+									Any
+								</option>
+								<option value="mazda">
+									Mazda
+								</option>
+								<option value="peugeot">
+									Peugeot
+								</option>
+								<option value="ford">
+									Ford
+								</option>
+								<option value="volkswagen">
+									Volkswagen
+								</option>
+								<option value="vauxhall">
+									Vauxhall
+								</option>
+								<option value="bmw">
+									BMW
+								</option>
+								<option value="jaguar">
+									Jaguar
+								</option>
+								<option value="volvo">
+									Volvo
+								</option>
+							</select>
+						</p>
+						<p>
+							<label for="make">Min Price</label> <input type="text" name="minPrice" value="" id="minPrice" />
+						</p>
+						<p>
+							<label for="make">Max Price</label> <input type="text" name="maxPrice" value="" id="maxPrice" />
+						</p>
+						<p>
+							<label for="year">Year</label> <input type="text" name="year" value="2007" id="year" />
+						</p>
+						<p>
+							<input type="submit" value="Search" class="awesome" />
+						</p>
+					</form>
+					<br class="clear" />
+				</div>
+				
+				<p id="result-number">
+					<span>4 results found.</span>
+					<a href="?/search/save/minPrice//maxPrice//year/2007">Save Search</a>
+				</p>				
+				
+				<div class="car-container">
+					<h3>
+						Peugeot - 407 SW Estate
+					</h3>
+					<div class="car-details">
+						<span class="price">£5795.00</span>
+						<ul>
+							<li>
+								<span class="label">Year</span> <span class="value">2007</span>
+							</li>
+							<li>
+								<span class="label">CC</span> <span class="value">2</span>
+							</li>
+							<li>
+								<span class="label">Color</span> <span class="value">Black</span>
+							</li>
+						</ul>
+					</div>
+					<div id="car-image">
+						<img src="/a4/app/public/photos/12.jpg" />
+					</div>
+				</div>
+				<div class="car-container">
+					<h3>
+						Ford - Mondeo Hatchback
+					</h3>
+					<div class="car-details">
+						<span class="price">£6495.00</span>
+						<ul>
+							<li>
+								<span class="label">Year</span> <span class="value">2007</span>
+							</li>
+							<li>
+								<span class="label">CC</span> <span class="value">2</span>
+							</li>
+							<li>
+								<span class="label">Color</span> <span class="value">Silver</span>
+							</li>
+						</ul>
+					</div>
+					<div id="car-image">
+						<img src="/a4/app/public/photos/13.jpg" />
+					</div>
+				</div>
+				<div class="car-container">
+					<h3>
+						Volkswagen - Passat Saloon
+					</h3>
+					<div class="car-details">
+						<span class="price">£5995.00</span>
+						<ul>
+							<li>
+								<span class="label">Year</span> <span class="value">2007</span>
+							</li>
+							<li>
+								<span class="label">CC</span> <span class="value">2</span>
+							</li>
+							<li>
+								<span class="label">Color</span> <span class="value">Black</span>
+							</li>
+						</ul>
+					</div>
+					<div id="car-image">
+						<img src="/a4/app/public/photos/17.jpg" />
+					</div>
+				</div>
+				<div class="car-container">
+					<h3>
+						Volvo - V50 Estate
+					</h3>
+					<div class="car-details">
+						<span class="price">£7695.00</span>
+						<ul>
+							<li>
+								<span class="label">Year</span> <span class="value">2007</span>
+							</li>
+							<li>
+								<span class="label">CC</span> <span class="value">2</span>
+							</li>
+							<li>
+								<span class="label">Color</span> <span class="value">Blue</span>
+							</li>
+						</ul>
+					</div>
+					<div class="car-image">	
+						<img src="/a4/app/public/photos/20.jpg" />
+					</div>
+				</div>
+				<br class="clear" />
+			</div>
+		</div>
+		<div id="footer"></div>
+	</body>
+</html>

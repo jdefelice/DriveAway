@@ -1,0 +1,593 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*-----------------------------------
+	Style Start
+-------------------------------------*/
+
+body{
+	font-family: sans-serif;
+}
+
+strong{
+	font-weight: bold;
+}
+
+input{
+	border-radius:5px;
+}
+
+
+/**** Form
+**********/
+
+form.default{
+	background-color: #ccc;
+	width: 460px;
+	float: left;
+	margin-top: 30px;
+	padding: 30px 0;
+	border-radius:10px;
+	box-shadow:0 1px 3px rgba(0,0,0,0.5);
+}
+
+form.default li{
+	width: 460px;
+	float: left;
+	margin-bottom: 10px;
+}
+
+form.default label{
+	width: 140px;
+	float: left;
+	display: block;
+	text-align: right;
+	margin-right: 20px;
+	padding-top: 8px;
+}
+
+form.default input{
+	width: 240px;
+	float: left;
+	display: block;
+	margin-right: 20px;
+	height: 24px;
+	padding: 3px;
+	font-size: 16px;
+}
+
+form.default select{
+	font-size: 16px;
+}
+
+form.default input[type='submit']{
+	background:#222 url(/images/alert-overlay.png) repeat-x;
+	display:inline-block;
+	color:#fff;
+	text-decoration:none;
+	border-radius:5px;
+	box-shadow:0 1px 3px rgba(0,0,0,0.5);
+	text-shadow:0 -1px 1px rgba(0,0,0,0.25);
+	border-bottom:1px solid rgba(0,0,0,0.25);
+	position:relative;
+	cursor:pointer;
+	padding:5px 10px 6px;
+	background-color:#2daebf;
+	font-size:14px;
+	padding:8px 14px 9px;
+	width: auto;
+	height: auto;
+	float: right;
+}
+
+form.default input[type='submit']:hover {
+	background-color:#007d9a;
+	color:#fff;
+}
+
+form.default input[type='submit']:active {
+	top:1px;
+}
+
+form.default #errors{
+	border-radius:10px;
+	box-shadow: inset 0 1px 3px rgba(0,0,0,0.5);
+	background-color: #FF4E4E;
+	padding: 10px;
+	width: 360px;
+	float:left;
+	margin-left:40px;
+	margin-bottom: 10px;
+}
+
+form.default #errors li{
+	margin: 2px 0;
+}
+
+#wrapper{
+	max-width: 960px;
+	width: 100%;
+	margin: 10px auto;
+	background-color: #eee;
+	padding: 10px;
+}
+
+#flash{
+	width: 100%;
+	float: left;
+	clear: both;
+	margin-bottom: 20px;
+	height: 30px;
+}
+
+#flash span{
+	padding: 10px;
+	margin: 0 auto;
+	width: 500px;
+	display: block;
+	text-align: center;	
+	border-radius:10px;
+	box-shadow: inset 0 1px 3px rgba(0,0,0,0.5);
+}
+
+#flash .success{
+	background-color: #0f0;
+}
+
+#flash .error{
+	background-color: #FF4E4E;
+}
+
+#content{
+	clear: both;
+	float: left;
+	width: 100%;
+	min-height: 600px;
+}
+
+#header{
+	float:left;
+	width: 100%;
+	padding: 0 10px 20px;
+	max-width: 940px;
+}
+
+#header #menu{
+	float: right;
+}
+
+#header a{
+	text-decoration: none;
+	color: blue;
+}
+
+#header a:hover{
+	border-bottom: 1px solid #000;
+}
+
+h1{
+	float: left;
+	font-size: 42px;
+	margin-top: 30px;
+	font-weight: bold;
+}
+
+#header h1 a{
+	color: #000;
+	text-decoration: none;
+	border: none;
+}
+
+h2{
+	font-size: 30px;
+}
+
+table{
+	border: 1px solid #000;
+}
+
+table th{
+	border: 1px solid #000;
+	padding: 5px;
+	font-weight: bold;
+}
+
+table td{
+	border: 1px solid #000;
+	padding: 5px;
+}
+
+#welcome{
+	width: 460px;
+	float: left;
+	margin: 0 10px;
+}
+
+#welcome p{
+	margin-top: 30px;
+}
+
+#register{
+	width: 460px;
+	float: left;
+	margin: 0 10px;
+}
+
+#register form{
+	background-color: #ccc;
+	width: 460px;
+	float: left;
+	margin-top: 30px;
+	padding: 30px 0;
+	border-radius:10px;
+	box-shadow:0 1px 3px rgba(0,0,0,0.5);
+}
+
+#register li{
+	width: 460px;
+	float: left;
+	margin-bottom: 10px;
+}
+
+#register label{
+	width: 140px;
+	float: left;
+	display: block;
+	text-align: right;
+	margin-right: 20px;
+	padding-top: 8px;
+}
+
+#register input{
+	width: 240px;
+	float: left;
+	display: block;
+	margin-right: 20px;
+	height: 24px;
+	padding: 3px;
+	font-size: 16px;
+}
+
+#register #dob input{
+	width: 60px;
+	float: left;
+	display: block;
+}
+
+#register input#btn_register{
+	width: auto;
+	height: auto;
+	float: right;
+	margin-right: 50px;
+}
+
+#register #errors{
+	background-color: #f00;
+	padding: 10px;
+	width: 360px;
+	float:left;
+	margin-left:40px;
+	margin-bottom: 10px;
+}
+
+#register #errors li{
+	clear: both;
+	float: left;
+}
+
+#login-form{
+	padding: 16px;
+	font-weight: normal;
+	background-color:#ccc;
+	width: 300px; 
+	margin: 2em auto 0;
+	border-radius: 10px;
+	box-shadow: 1px 1px 5px #888;
+}
+
+#login-form label {
+	color: #000;
+	font-size: 13px;
+	width: 97%;
+	display:block;
+	font-weight: bold;
+}
+
+#login-form input {
+	font-size: 16px;
+	padding: 3px;
+	margin-top: 2px;
+	margin-right: 6px;
+	margin-bottom: 16px;
+	border: 1px solid #e5e5e5;
+	background: #fbfbfb;
+	width: 100%;
+
+}
+
+#search-box{
+	background-color: #999;
+	padding: 10px;
+	border-radius: 10px;
+	float: left;
+	width: 100%;
+	max-width: 940px;
+}
+
+#search-box p{
+	float: left;
+	display: block;
+	padding: 0 10px;
+}	
+
+#search-box label{
+	float: left;
+}
+
+#search-box input, #search-box select{
+	font-size: 18px;
+	clear: both;
+	float: left;
+}
+
+#search-box #year,
+#search-box #minPrice,
+#search-box #maxPrice{
+	width: 60px;
+}
+
+#result-number{
+	clear: both;
+	margin: 10px 0;
+	display: block;
+}
+
+.car-containter{
+	background-color: #ccc;
+	margin: 10px;
+	padding: 10px;
+	min-width: 400px;
+	max-width: 440px;
+	float: left;
+	height: 170px;
+	position: relative;
+	box-shadow: 1px 1px 5px #888;
+}
+
+.car-containter img{
+	float: left;
+	box-shadow: 1px 1px 5px #888;
+	border: 1px solid #000;
+	max-width: 180px;
+}
+
+.car-containter .car-details{
+	float: right;
+}
+
+.car-containter h3{
+	width: 400px;
+	float: left;
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+.car-containter .price{
+	float: right;
+	font-size: 20px;
+	color: #00f;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+.car-containter ul{
+	clear: left;
+}
+
+.car-containter li{
+	margin-bottom: 3px;
+	clear: both;
+	float: left;
+}
+
+.car-containter .label{
+	float: left;
+	width: 100px;
+	display: block;
+	clear: left;
+}
+
+.car-containter .value{
+	float: left;
+	width: 100px;
+	display: block;
+}
+
+#user-menu{
+	background-color: #ccc;
+	border-bottom: 1px solid #000;
+	float: left;
+	margin-bottom: 10px;
+	width: 200px;
+}
+
+#user-menu li{
+	float: left;
+	display: block;
+	width: 100%;
+	
+}
+
+#user-menu a{
+	display: block;
+	padding: 5px;
+	border: 1px solid #fff;
+	border-bottom-color: #fff ;
+	text-decoration: none;
+	color: #00f;
+	background-color: #fff;
+}
+
+#user-menu a:hover{
+	background-color: #0f0;
+}
+
+body#user.details #user-menu #user-details a,
+body#user.password #user-menu #user-password a,
+body#user.searches #user-menu #user-searches a
+{
+	border-color: #000 !important;
+	border-bottom-color: #fff !important;
+}
+
+#user-details-form{
+	width: 460px;
+	float: left;
+	margin: 0 10px;
+}
+
+#user-details-form form{
+	background-color: #ccc;
+	width: 460px;
+	float: left;
+	margin-top: 30px;
+	padding: 30px 0;
+}
+
+#user-details-form li{
+	width: 460px;
+	float: left;
+	margin-bottom: 10px;
+}
+
+#user-details-form label{
+	width: 140px;
+	float: left;
+	display: block;
+	text-align: right;
+	margin-right: 20px;
+	padding-top: 8px;
+}
+
+#user-details-form input{
+	width: 240px;
+	float: left;
+	display: block;
+	margin-right: 20px;
+	height: 24px;
+	padding: 3px;
+	font-size: 16px;
+}
+
+#user-details-form #dob input{
+	width: 60px;
+	float: left;
+	display: block;
+}
+
+#user-details-form input#btn_register{
+	width: auto;
+	float: right;
+	margin-right: 50px;
+}
+
+#user-details-form #errors{
+	background-color: #f00;
+	padding: 10px;
+	width: 360px;
+	float:left;
+	margin-left:40px;
+	margin-bottom: 10px;
+}
+
+#user-details-form #errors li{
+	clear: both;
+	float: left;
+}
+
+body#user.searches table{
+	width: 600px;
+	float: left;
+	clear: none;
+}
+
+#footer{
+	clear: both;
+	border-top: 1px solid #000;
+	margin-top: 20px;
+}
+
+
+
+.awesome, .awesome:visited {
+	background:#222 url(/images/alert-overlay.png) repeat-x;
+	display:inline-block;
+	color:#fff;
+	text-decoration:none;
+	border-radius:5px;
+	box-shadow:0 1px 3px rgba(0,0,0,0.5);
+	text-shadow:0 -1px 1px rgba(0,0,0,0.25);
+	border-bottom:1px solid rgba(0,0,0,0.25);
+	position:relative;
+	cursor:pointer;
+	padding:5px 10px 6px;
+	background-color:#2daebf;
+	font-size:14px;
+	padding:8px 14px 9px;
+}
+
+.awesome:hover {
+	background-color:#007d9a;
+	color:#fff;
+}
+
+.awesome:active {
+	top:1px;
+}

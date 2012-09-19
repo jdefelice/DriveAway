@@ -1,0 +1,286 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*-----------------------------------
+	Style Start
+-------------------------------------*/
+
+body{
+	font-family: sans-serif;
+	background-color: #2d2d2d;
+	font-size: 100%;
+	color: #fff;
+}
+
+a, a:visited{
+	color: #afe31e;
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+.clear{
+	clear:both;
+}
+
+/*-----------------------------------
+	Page Wrapper
+-------------------------------------*/
+#wrapper{
+	width: 90%;
+	margin: 0 auto;
+}
+
+/*-----------------------------------
+	Page Header
+-------------------------------------*/
+#header{
+	height: 120px;
+}
+
+#header h1 a{
+	width: 330px;
+	height: 100px;
+	float: left;
+	background-color: #666;
+	margin-top: 10px;
+	background: transparent url(../app/public/images/logo.png);
+	text-indent: -999999px;
+	cursor: pointer;
+}
+
+#header #user-menu{
+	float: right;
+	padding: 10px;
+}
+
+/*-----------------------------------
+	Flash
+-------------------------------------*/
+
+#flash{
+	height: 60px;
+}
+
+#flash span{
+	width: 50%;
+	display: block;
+	margin: 0 auto;
+	padding: 10px 20px;
+	border-radius: 10px;
+	box-shadow: inset 1px 1px 5px #000;
+}
+
+#flash span.success{
+	background-color: #91d31b;
+}
+
+/*-----------------------------------
+	Content
+-------------------------------------*/
+#content{
+	padding-bottom: 100px;
+}
+
+
+/*-----------------------------------
+	Search
+-------------------------------------*/
+#search-box{
+	background-color: #8e8e8e;
+	padding: 20px 10px;
+	border-radius: 10px;
+	box-shadow: 1px 1px 5px #000;
+	width: 97.916666666667%;
+	margin: 0 auto;
+}
+
+#search-box p{
+	float: left;
+	display: block;
+	margin-bottom: 10px;
+}
+
+#search-box label{
+	float: left;
+	display: block;
+	font-size: 14px;
+	margin-left: 10px;
+	margin-bottom: 3px;
+}
+
+#search-box input,
+#search-box select{
+	float: left;
+	display: block;
+	clear: left;
+	font-size: 16px;
+	margin: 0 10px;
+	padding: 4px;
+	border-radius:5px;
+}
+
+#search-box input#year,
+#search-box input#minPrice,
+#search-box input#maxPrice{
+	width: 60px;
+	text-align: right;
+}
+
+#search-box input[type='submit']{
+	margin-top: 18px;
+	display:inline-block;
+	color:#fff;
+	border-radius:5px;
+	box-shadow:0 1px 3px rgba(0,0,0,0.5);
+	text-shadow:0 -1px 1px rgba(0,0,0,0.25);
+	border-bottom:1px solid rgba(0,0,0,0.25);
+	cursor:pointer;
+	padding:5px 10px 6px;
+	background-color:#6CBF18;
+	font-size:14px;
+	padding: 4px 14px 5px;
+	width: auto;
+	height: auto;
+}
+
+#result-number{
+	clear: both;
+	margin: 20px 0;
+	padding: 0px;
+	float: left;
+	width: 100%;
+}
+
+#result-number span{
+	padding: 7px 7px 7px 0;
+	float: left;
+}
+
+#result-number a{
+	float: right;
+	padding: 7px;
+	background-color: #888;
+	border-radius: 5px;
+	color: #fff;
+}
+
+/*-----------------------------------
+	Car Container
+-------------------------------------*/
+.car-container{
+	float: left;
+	width: 45.833333333333%; /* 440 / 960 */
+	margin: 1.041666666667%; /* 10 / 960 */
+	padding: 1.041666666667%; /* 10 / 960 */
+	background-color: #ccc;
+	position: relative;
+	border-radius: 10px;
+	color: #000;
+	box-shadow: 1px 1px 5px #000;
+	max-height: 220px;
+}
+
+.car-container:nth-child(odd){
+	clear: left;
+}
+
+.car-container h3{
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+.car-container .price{
+	top: 10px;
+	right: 10px;
+	position: absolute;
+	font-size: 20px;
+	color: #00f;
+	font-weight: bold;
+}
+
+.car-container .car-details{
+	float: right;
+	width: 47.727272727273%;
+}
+
+.car-container .car-image{
+	float: left;
+	width: 47.727272727273%;
+}
+
+.car-container img{
+	max-width: 47.727272727273%;
+	box-shadow: 1px 1px 5px #888;
+	border: 1px solid #000;
+}
+
+/*-----------------------------------
+	User Profile
+-------------------------------------*/
+
+#user-menu{
+	width: 25%; /* 240 / 960 */
+	min-height: 400px;
+}
+
+/*-----------------------------------
+	Footer
+-------------------------------------*/
+#footer{
+	background-color: #222;
+	height: 150px;
+	background: url(../app/public/images/bg.jpg);
+}
+
+
+
+
