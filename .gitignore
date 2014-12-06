@@ -3,8 +3,9 @@ config.php
 
 *.bak
 
-app/public/images/Thumbs.db
-
-app/public/photos/Thumbs.db
+Thumbs.db
 
 *.log
+
+nbproject/
+
